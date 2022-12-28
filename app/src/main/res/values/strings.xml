@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Birthday Reminder</string>
+    <string name="add_person_activity_name">Add a New Person</string>
+
+
+    //For activity_add_person.xml
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="birthday_date">Birthday Date</string>
+    <string name="friend">Friend</string>
+    <string name="family">Family</string>
+    <string name="other">Other</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+
+    //For menu in MainActivity
+    <string name="show_all_action">Show All</string>
+    <string name="friends_action">Friends</string>
+    <string name="family_action">Family</string>
+    <string name="others_action">Others</string>
+
+
+
+</resources>

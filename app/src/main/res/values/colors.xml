@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- colors for general appearance -->
+    <color name="colorPrimary">#4E96AC</color>
+    <color name="colorPrimaryDark">#1C647A</color>
+    <color name="colorPrimaryLight">#62AAC0</color>
+    <color name="colorAccent">#1C647A</color>
+
+<!--    <color name="extra_light_fab_color">#62AAC0</color>-->
+<!--    <color name="light_fab_color">#4E96AC</color>-->
+
+<!--    Colors for radio buttons -->
+    <color name="kelly_green">#4CC552</color>
+    <color name="corn_yellow">#FFF380</color>
+    <color name="blue_gray">#98AFC7</color>
+</resources>
