@@ -130,7 +130,7 @@ public class AddPersonActivity extends AppCompatActivity {
         //FLAG_UPDATE_CURRENT is needed in order to change the intent Extra every time, instead of having it remain the same
         PendingIntent pendingIntent = PendingIntent.getBroadcast(AddPersonActivity.this, 1, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
         //on the birthday date
-        mAlarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pendingIntent);
+        mAlarmManager.setWindow(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), c.getTimeInMillis() + 20*60*1000, pendingIntent);
 
         Calendar c7 = Calendar.getInstance();
         c7.set(Calendar.MONTH, month-1);
@@ -151,7 +151,7 @@ public class AddPersonActivity extends AppCompatActivity {
 
         PendingIntent pendingIntent7 = PendingIntent.getBroadcast(AddPersonActivity.this, 2, intent7, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
         //on the birthday date
-        mAlarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, c7.getTimeInMillis(), pendingIntent7);
+        mAlarmManager.setWindow(AlarmManager.RTC_WAKEUP, c7.getTimeInMillis(), c7.getTimeInMillis() + 20*60*1000, pendingIntent7);
 
         Log.v("AddPersonActivity", "Alarm in AddPersonActivity is set");
     }
